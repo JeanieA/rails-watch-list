@@ -1,0 +1,8 @@
+<h2><%= @list.name %></h2>
+<%= @list.movies.each do |movie| %>
+  <%= movie.title %>
+<% end %>
+
+<%= link_to "Delete this list", list_path(@list), method: :delete, class: "btn btn-danger" %>
+
+
