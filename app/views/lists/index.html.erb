@@ -1,5 +1,7 @@
 <h3>📽My Watch List🎞</h3>
 
+
+
 <% @lists.each do |list| %>
   <%= link_to list_path(list) do %>
     <%= list.name %>
@@ -8,3 +10,6 @@
 <% end %>
 <br>
 <%= link_to "Create a new watch list", new_list_path, class: "btn btn-success" %>
+
+<%= cl_image_tag("u4zpog8xig8vhz6lgrcy",
+      width: 400, height: 300, crop: :fill) %>
